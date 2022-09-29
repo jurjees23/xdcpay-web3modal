@@ -10,9 +10,12 @@
     "eject": "node ../node_modules/react-scripts/bin/react-scripts.js eject"
   },
   "dependencies": {
+    "@walletconnect/web3-provider": "^1.8.0",
+    "ethers": "^5.7.1",
     "react": "file:../node_modules/react",
     "react-dom": "file:../node_modules/react-dom",
     "react-scripts": "file:../node_modules/react-scripts",
+    "web3modal": "^1.9.9",
     "xdcpay-web3modal": "file:.."
   },
   "devDependencies": {
