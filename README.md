@@ -34,7 +34,7 @@ const App = () => {
           }
         }
       },
-      'custom-xdc': getXdcModal, // Add One line in  xdc pay web3modal provider
+      'custom-xdc': getXdcModal, // Add One line for  xdc pay web3modal provider
     }
   });
   //REST of your code
