@@ -20,7 +20,7 @@
     "xdcpay",
     "web3modal"
   ],
-  "homepage": "https://github.com/piyushswain/react-rails-pagination",
+  "homepage": "https://github.com/jurjees23/xdcpay-web3modal",
   "scripts": {
     "build": "microbundle-crl --no-compress --format modern,cjs",
     "start": "microbundle-crl watch --no-compress --format modern,cjs",
