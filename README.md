@@ -14,17 +14,33 @@ npm install --save xdcpay-web3modal
 
 ```jsx
 import React, { Component } from 'react'
+import Web3Modal from 'web3modal';
+import { getXdcModal } from 'xdcpay-web3modal'
+import WalletConnect from "@walletconnect/web3-provider";
 
-import MyComponent from 'xdcpay-web3modal'
-import 'xdcpay-web3modal/dist/index.css'
 
-class Example extends Component {
-  render() {
-    return <MyComponent />
-  }
+const App = () => {
+  const web3Modal = new Web3Modal({
+    cacheProvider: true,
+    disableInjectedProvider: false,
+    providerOptions: {
+      walletconnect: {
+        package: WalletConnect, // required
+        options: {
+          infuraId: "223f20f418c34a758240a7f416435110", // Required
+          network: "mainnet",
+          qrcodeModalOptions: {
+            mobileLinks: ["rainbow", "metamask", "argent", "trust", "imtoken", "pillar"]
+          }
+        }
+      },
+      'custom-xdc': getXdcModal, // Add One line in  xdc pay web3modal provider
+    }
+  });
+  //REST of your code
 }
 ```
 
 ## License
 
-MIT © [jjdev23](https://github.com/jjdev23)
+MIT © [jurjees23](https://github.com/jurjees23)
